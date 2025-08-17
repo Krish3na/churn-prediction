@@ -186,9 +186,9 @@ Before deploying, ensure you have:
 
 ## 🚀 Your App URL
 
-Once deployed, your app will be available at:
+Your live dashboard is available at:
 ```
-https://your-app-name.streamlit.app
+https://churn-prediction-mjzappk5yxxurxc4gbv.streamlit.app/
 ```
 
 Share this URL with stakeholders, add it to your resume, or use it for presentations!
