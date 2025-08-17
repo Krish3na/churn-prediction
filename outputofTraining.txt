@@ -1,0 +1,111 @@
+(base) PS C:\Users\saikr\Downloads\Projects_GAI\ChurnPrediction> python src/models/train_model.py
+
+============================================================
+🚀 STARTING MODEL TRAINING AND EVALUATION
+============================================================
+Loading data from data/featured_data.csv
+Data shape: (10000, 52)
+Preparing data for training...
+Training set: (8000, 50)
+Test set: (2000, 50)
+Test set: (2000, 50)
+Training churn rate: 9.74%
+Test churn rate: 9.75%
+
+🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧
+🔧 STARTING HYPERPARAMETER TUNING
+🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧🔧
+This will test different parameter combinations to find the best model... 
+Estimated time: 2-5 minutes depending on your computer
+You can press Ctrl+C to stop and use default parameters
+Testing 648 parameter combinations with 5-fold cross-validation...        
+Total model fits: 3240
+Fitting 5 folds for each of 648 candidates, totalling 3240 fits
+Best parameters: {'class_weight': 'balanced', 'max_depth': 30, 'max_features': None, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}
+Best CV score: 0.7264
+✅ Hyperparameter tuning completed successfully!
+Evaluating model performance...
+Accuracy: 0.9405
+Precision: 0.6667
+Recall: 0.7795
+F1-Score: 0.7187
+ROC-AUC: 0.9613
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97      1805
+           1       0.67      0.78      0.72       195
+
+    accuracy                           0.94      2000
+   macro avg       0.82      0.87      0.84      2000
+weighted avg       0.95      0.94      0.94      2000
+
+
+Confusion Matrix:
+[[1729   76]
+ [  43  152]]
+Performing 5-fold cross-validation...
+Cross-validation F1 scores: [0.67320261 0.73442623 0.7244582  0.75776398 0.74193548]
+Mean CV F1 score: 0.7264 (+/- 0.0574)
+Analyzing feature importance...
+Top 15 most important features:
+                       feature  importance
+6           satisfaction_score    0.314960
+1               monthly_logins    0.290898
+3                data_usage_gb    0.073084
+4              support_tickets    0.046958
+7                late_payments    0.037902
+2                features_used    0.034665
+17  features_accessed_mean_90d    0.016608
+10        pages_viewed_std_30d    0.015319
+38                 tenure_days    0.013396
+16   session_duration_mean_90d    0.013238
+12             logins_mean_60d    0.013164
+9    session_duration_mean_30d    0.013031
+5      avg_response_time_hours    0.011945
+14   session_duration_mean_60d    0.011524
+13    session_duration_sum_60d    0.011231
+Model and related files saved to models
+Churn risk predictions saved to data/churn_risk_predictions.csv
+
+38                 tenure_days    0.013396
+16   session_duration_mean_90d    0.013238
+12             logins_mean_60d    0.013164
+9    session_duration_mean_30d    0.013031
+5      avg_response_time_hours    0.011945
+14   session_duration_mean_60d    0.011524
+13    session_duration_sum_60d    0.011231
+Model and related files saved to models
+Churn risk predictions saved to data/churn_risk_predictions.csv
+
+=== Model Training Complete ===
+Model accuracy: 0.9405
+Model F1-score: 0.7187
+Model ROC-AUC: 0.9613
+
+Model accuracy: 0.9405
+Model F1-score: 0.7187
+Model ROC-AUC: 0.9613
+Model accuracy: 0.9405
+Model F1-score: 0.7187
+Model ROC-AUC: 0.9613
+
+Top 10 High-Risk Customers:
+      customer_id  churn_probability churn_risk
+4479  CUST_004480           0.999670       High
+2049  CUST_002050           0.999390       High
+5457  CUST_005458           0.998927       High
+47    CUST_000048           0.998474       High
+9841  CUST_009842           0.998414       High
+201   CUST_000202           0.997897       High
+2580  CUST_002581           0.997876       High
+307   CUST_000308           0.997480       High
+4169  CUST_004170           0.996665       High
+2748  CUST_002749           0.996052       High
+
+
+
+
+
+streamlit run src/dashboard/app.py --server.headless true --server.port 8501
