@@ -188,7 +188,7 @@ Before deploying, ensure you have:
 
 Your live dashboard is available at:
 ```
-https://churn-prediction-mjzappk5yxxurxc4gbv.streamlit.app/
+https://churn-prediction-az3hjkvywwd5kxeoj7sfor.streamlit.app/
 ```
 
 Share this URL with stakeholders, add it to your resume, or use it for presentations!

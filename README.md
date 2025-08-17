@@ -4,7 +4,7 @@
 This project implements a comprehensive customer churn prediction system using machine learning and data analytics. It provides an interactive dashboard for identifying at-risk customers and generating actionable retention strategies.
 
 ## 🚀 Live Demo
-**Deployed on Streamlit Cloud:** [https://churn-prediction-mjzappk5yxxurxc4gbv.streamlit.app/](https://churn-prediction-mjzappk5yxxurxc4gbv.streamlit.app/)
+**Deployed on Streamlit Cloud:** [https://churn-prediction-az3hjkvywwd5kxeoj7sfor.streamlit.app/](https://churn-prediction-az3hjkvywwd5kxeoj7sfor.streamlit.app/)
 
 🎯 **Click the link above to access your live Churn Prediction Dashboard!**
 
