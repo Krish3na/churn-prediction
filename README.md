@@ -215,7 +215,7 @@ python src/feature_engineering/feature_engineering.py
 python src/models/train_model.py
 ```
 
-## Screenshots
+## Dashboard Interface
 
 The dashboard provides comprehensive analytics through multiple views:
 
