@@ -973,13 +973,13 @@ class EnhancedChurnDashboard:
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
-            st.metric("Accuracy", "95.05%", "↑ 2.3%")
+            st.metric("Accuracy", "94.05%", "↑ 2.3%")
         
         with col2:
-            st.metric("Precision", "83.7%", "↑ 1.8%")
+            st.metric("Precision", "66.7%", "↑ 1.8%")
         
         with col3:
-            st.metric("Recall", "81.9%", "↑ 2.1%")
+            st.metric("Recall", "77.9%", "↑ 2.1%")
         
         with col4:
             st.metric("F1-Score", "82.8%", "↑ 1.9%")
@@ -988,7 +988,7 @@ class EnhancedChurnDashboard:
         st.subheader("🏆 Model Performance Comparison")
         
         models = ['Random Forest', 'XGBoost', 'Logistic Regression', 'SVM']
-        accuracy_scores = [95.05, 93.2, 87.8, 89.1]
+        accuracy_scores = [94.05, 93.2, 87.8, 89.1]
         f1_scores = [82.8, 81.5, 76.2, 78.9]
         
         fig_comparison = go.Figure()

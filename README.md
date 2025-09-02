@@ -55,7 +55,7 @@ The solution follows a systematic approach:
 3. **Model Development**: Train and validate machine learning models
 4. **Risk Scoring**: Generate churn probability scores for each customer
 5. **Analytics Dashboard**: Provide interactive insights and recommendations
-6. **Action Planning**: Generate targeted retention strategies
+6. **Action Planning**: Generate targeted retention strategies for high-risk customers
 
 ## Technical Implementation
 
@@ -68,12 +68,12 @@ The ETL process extracts data from SQLite database and CSV files, performs data 
 
 ### Machine Learning Model
 - **Algorithm**: Random Forest Classifier
-- **Performance**: 95.05% accuracy, 83.7% precision, 81.9% recall
-- **Feature Selection**: Top 10 features identified through importance analysis
+- **Performance**: 94.05% accuracy, 66.7% precision, 77.9% recall
+- **Feature Selection**: Top 15 features identified through importance analysis
 - **Validation**: 5-fold cross-validation for robust evaluation
 
 ### Dashboard Application
-Built with Streamlit and Plotly for interactive data visualization and real-time analytics.
+Built with Streamlit and Plotly for interactive data visualization and real-time analytics. The dashboard provides comprehensive customer churn risk analysis and targeted retention strategy recommendations.
 
 ## Tools and Technologies
 
@@ -100,7 +100,7 @@ Built with Streamlit and Plotly for interactive data visualization and real-time
 
 ## Dashboard Features
 
-The interactive dashboard provides comprehensive analytics across multiple tabs:
+The interactive Streamlit dashboard provides comprehensive analytics across multiple tabs:
 
 ### Main Overview
 - Key performance indicators (KPIs)
@@ -169,10 +169,10 @@ These notebooks provide transparency into the analytical process and serve as do
 ## Business Impact
 
 The system has identified significant business opportunities:
-- 913 high-risk customers with 85%+ churn probability
-- $68,726 monthly revenue at risk
-- $602,000 annual savings potential through targeted retention
-- 1,218% ROI on retention efforts
+- **913 high-risk customers (9.1% of total)** with 85%+ churn probability
+- **$68,726 monthly revenue at risk**
+- **$602,000 annual savings potential** through targeted retention
+- **1,218% ROI** on retention efforts
 
 ## Implementation Guide
 
@@ -246,10 +246,11 @@ The dashboard provides comprehensive analytics through multiple views:
 ## Key Features
 
 - **Automated Risk Scoring**: Real-time churn probability calculation
-- **Targeted Recommendations**: Personalized retention strategies
+- **Targeted Recommendations**: Personalized retention strategies for high-risk customers
 - **Business Impact Analysis**: Quantified ROI and savings potential
 - **Interactive Analytics**: Multi-dimensional data exploration
 - **Production Ready**: Deployed and accessible via web interface
+- **High-Risk Customer Identification**: Pinpoints 9.1% of customers at highest churn risk
 
 ## Future Enhancements
 
